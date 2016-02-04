@@ -9,5 +9,5 @@ Chandra Mangipudi, Nicholas Saari, George Brown and Nathan Ische-Knobloauch
 
 # Watch Video here 
 
-[![ScreenShot](http://scottadkinsworkout.org/wp-content/uploads/2012/04/scott-adkins-workout-training-plan.jpg)](https://www.youtube.com/watch?v=sequbMl1sr0)
+[![ScreenShot](http://gdriv.es/cp_webpage/parallel_park.png)](https://www.youtube.com/watch?v=sequbMl1sr0)
 
