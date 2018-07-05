@@ -28,7 +28,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <fstream>
 #include <string>
 #include <sys/time.h>
-#include <vlc/vlc.h>
+
+#define PLAY_MUSIC 0
+#if PLAY_MUSIC
+	#include <vlc/vlc.h>
+#endif
 using namespace std;
 
 //<------------- Pointers for Sensor readings-----------------> 
@@ -212,6 +216,7 @@ int main(int argc, char **argv)
 
 
 	//<------------- Put music for different segments of the robot-----------------> 
+	#if PLAY_MUSIC
 	libvlc_instance_t *inst;
 	libvlc_media_player_t *mp;
 	libvlc_media_t *m;
@@ -236,7 +241,7 @@ int main(int argc, char **argv)
 	m3 = libvlc_media_new(inst3, "happy.mp3", NULL);
 	mp3 = libvlc_media_player_new_from_media(m3, NULL);
 	libvlc_media_release(m3);
-
+	#endif
 	//<------------- Robot classes-----------------> 
 	int ret;
 	// robot
@@ -403,8 +408,10 @@ int main(int argc, char **argv)
 			robot.lock();
 			robot.stop();
 			robot.unlock();
+			#if PLAY_MUSIC
 			libvlc_media_player_stop(mp, NULL);
 			libvlc_media_player_play(mp2, NULL);
+			#endif
 			ArUtil::sleep(2000);
 
 			// Robot starts backing up while simultaneously turning
@@ -428,7 +435,9 @@ int main(int argc, char **argv)
 			robot.lock();
 			robot.stop();
 			robot.unlock();
+			#if PLAY_MUSIC
 			libvlc_media_player_stop(mp2, NULL);
+			#endif
 
 			// Rotational velocity is set to zero.  Robot moves
 			// forward for a short while to center itself in the spot.
@@ -440,7 +449,9 @@ int main(int argc, char **argv)
 			robot.lock();
 			robot.stop();
 			robot.unlock();
+			#if PLAY_MUSIC
 			libvlc_media_player_play(mp3, NULL);
+			#endif
 			break;
 		}
 

@@ -1,0 +1,9 @@
+Install Aria
+
+http://robots.mobilerobots.com/wiki/ARIA
+
+Compile program
+chmod +x make.sh
+./make.sh
+
+Requires SICK Laser Scanner and Pioneer Robot to work on
