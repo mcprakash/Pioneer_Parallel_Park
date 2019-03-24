@@ -9,5 +9,4 @@ Chandra Mangipudi, Nicholas Saari, George Brown and Nathan Ische-Knobloauch
 
 # Watch Video here 
 
-[![ScreenShot](https://s11.postimg.org/ur96ahlyb/parallel_park.png)](https://www.youtube.com/watch?v=sequbMl1sr0)
-
+<a href="https://www.youtube.com/watch?v=txDWA1ZpQMc&t=5s"><img src="http://drive.google.com/uc?export=view&id=17fsGfONr3NHlQgnYkVqeEUXEBkQJCsmu"  title="ParallelPark" alt="pioneer_parallel_park_img"></a>
